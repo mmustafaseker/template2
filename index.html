@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- posisyon yemedi -->
+    <div class="">
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" onclick="myFuncyion()" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#band">BAND <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#tour">TOUR</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#cıntact" tabindex="-1" aria-disabled="true">CONTACT</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            MORE
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Merchandise</a>
+                            <a class="dropdown-item" href="#">Extras</a>
+                            <a class="dropdown-item" href="#">Media</a> 
+                        </div>
+                    </li>
+
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- sayfa  -->
+    <div style="max-width: 2000px;">
+
+        <!-- değişen resimler -->
+        <div id="carouselExampleSlidesOnly" class=" carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="chicago.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h3>Los Angeles</h3>
+                        <p><b>We had the best time playing at Venice Beach!</b></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="la.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h3>New York</h3>
+                        <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="ny.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h3>Chicago</h3>
+                        <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- The Band Section -->
+
+    <div id="band" class="container text-center p-5 align-items-center " style="max-width: 800px;">
+        <h2 class="w-100">THE BAND</h2>
+        <p class="opac"><i>We love music</i></p>
+        <p class="d-flex justify-content-center">We have created a fictional band website. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <div class="row p-5 ml-5">
+            <div class="col-md-3">
+                <p>Mustafa</p>
+                <img src="bandmember.jpg" class="border" alt="" style="width: 60%;">
+            </div>
+            <div class="col-md-3">
+                <p>Mustafa</p>
+                <img src="bandmember.jpg" class="border border-bottom" alt="" style="width: 60%;">
+            </div>
+            <div class="col-md-3">
+                <p>Mustafa</p>
+                <img src="bandmember.jpg" class="border border-bottom" alt="" style="width: 60%;">
+            </div>
+        </div>
+    </div>
+    <!-- The Tour Section -->
+
+
+    <div id="tour" class=" bg-dark text-white" id="tour">
+        <div class="container text-center ">
+            <h2 class="w-100 text-center ">TOUR DATES</h2>
+            <p class="opacity center"><i>Remember to book your tickets!</i></p><br>
+            <ul class="list-group p-3   text-muted">
+                <li class="list-group-item">September <span class="badge badge-danger ml-2">Sold out</span></li>
+                <li class="list-group-item">October <span class="badge badge-danger ml-2">Sold out</span></li>
+                <li class="list-group-item">November <span class="badge badge-dark float-right ml-2">3</span></li>
+            </ul>
+
+            <div class="row-padding p-3 ml-5">
+                <div class="card-deck">
+                    <div class="col-md-3 mr-5">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="newyork.jpg" alt="Card image cap">
+                            <div class="card-body text-dark">
+                                <p><b>New York</b></p>
+                                <p class="w3-opacity">Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#myModal">Buy tickets</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mr-5">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="paris.jpg" alt="Card image cap">
+                            <div class="card-body text-dark">
+                                <p><b>Paris</b></p>
+                                <p class="w3-opacity">Sat 28 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#myModal">Buy tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="sanfran.jpg
+                            " alt="Card image cap">
+                            <div class="card-body text-dark">
+                                <p><b>San Francisco</b></p>
+                                <p class="w3-opacity">Sun 29 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#myModal">Buy tickets</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class=" modal-content">
+                        <div class="modal-header bg-success">
+                            <header class="container text-center p-5">
+                                <h2 style="color: darkblue;"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+                            </header>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        </div>
+                        <div class="container-fluid text-left">
+
+
+                            <label style="color: black; padding-top: 15px;" for=""><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label><br>
+                            <input class="input border form-control" type="text" name="" id=""
+                                placeholder="How many?"><br>
+                            <label style="color: black;" for=""><i class="fa fa-user"></i>  Send To</label><br>
+                            <input class="input border form-control" type="text" name="" id=""
+                                placeholder="Enter email"><br>
+                            <button class="btn-block bg-success"> <i class="fa fa-check"></i> Pay</button>
+                        </div>
+                        <div class="modal-footer">
+                            <p style="float: right; color: black;">
+                                Need <a href="">Help?</a>
+                            </p>
+                            <button style="margin-left: 5px;" class="btn btn-danger"><i class="fa fa-door-closed"></i> Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- iletişim -->
+    <div id="cıntact" class="container p-5 " style="max-width: 800px;" id="contact">
+        <h2 class="text-center">CONTACT</h2>
+        <p class=" text-center" style="opacity: 0.5;"><i>Fan? Drop a note!</i></p>
+        <div class="row p-md-3">
+            <div class="col p-md-5 mb-4">
+                <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            </div>
+            <div class="col p-4 ">
+                <form action="/action_page.php" target="_blank">
+                    <div class="row p-md-3" style="margin:0 -16px 8px -16px">
+                        <div>
+                            <input class="input border mb-2" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div>
+                            <input class="input border " type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="input border" type="text" placeholder="Message" required name="Message">
+                    <button class="btn-dark bg-dark text-white float-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+        <img src="map.jpg" class="img-fluid" style="width: 100%; height: auto;" alt="">
+
+        <footer class="container-fluid  text-center bg-secondary text-white mt-3 p-3">
+            <p>Find me on social media.</p>
+            <a style="color: white;;" class="fab fa-linkedin bd-dark"
+                href="https://www.linkedin.com/in/mustafa-%C5%9Feker-205ab71a3/" data-toggle="tooltip"
+                data-placement="top" title="linkedin"></a>
+
+            <a style="color: white;;" class="fab fa-instagram bd-dark" href="https://www.instagram.com/mmustafaseker/"
+                data-toggle="tooltip" data-placement="top" title="instagram"></a>
+
+            <a style="color: white;;" class="fab fa-twitter bd-dark" href="https://twitter.com/mmustafasekerr"
+                data-toggle="tooltip" data-placement="top" title="twitter"></a>
+
+            <a style="color: white;;" class="fab fa-facebook bd-dark" href="https://www.facebook.com/mustafa.seker.94"
+                data-toggle="tooltip" data-placement="top" title="facebook"></a>
+
+            <p>Powered by <a class="text-black-50" href="https://www.bilgeadam.com/" target="_blank">BilgeAdam
+                    Technology</a></p>
+        </footer>
+
+</body>
+
+</html>
